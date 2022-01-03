@@ -1,0 +1,25 @@
+#github-projects {
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto 0;
+
+  .card a {
+    text-decoration: none;
+    color: $default-font-color;
+    margin: 0.5rem;
+    border-radius: 15px;
+    padding: 1.5rem;
+    width: 500px;
+    background: $navbar-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+
+
+}

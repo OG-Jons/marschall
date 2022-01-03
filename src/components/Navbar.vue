@@ -1,10 +1,7 @@
 <template>
   <nav class="navbar">
-    <div>
-      <router-link to="/">Home</router-link>
-    </div>
-    <div>
-      <router-link to="/about">About</router-link>
+    <div v-for="route in $router.options.routes" :key="route.name">
+      <router-link :to="route.path">{{ route.name }}</router-link>
     </div>
   </nav>
 </template>

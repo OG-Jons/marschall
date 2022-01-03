@@ -1,18 +1,26 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <h1>
+      hello
+      <vue-typer
+        class="gradient-text"
+        text="Jonas Marschall"
+        :repeat="Infinity"
+        :shuffle="false"
+        initial-action="typing"
+        :pre-type-delay="70"
+        :type-delay="70"
+        :pre-erase-delay="2000"
+        :erase-delay="40"
+        erase-style="backspace"
+        caret-animation="expand"
+      />
+    </h1>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld,
-  },
 };
 </script>

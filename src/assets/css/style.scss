@@ -8,13 +8,6 @@ body {
   background: $default-font-color;
 }
 
-.hello {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .highlighted {
   color: $highlighted-font;
 }
