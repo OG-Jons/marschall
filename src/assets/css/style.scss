@@ -1,0 +1,55 @@
+
+body {
+  margin: 0;
+  background: $background;
+}
+
+.vue-typer .custom.caret {
+  background: $default-font-color;
+}
+
+.hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.highlighted {
+  color: $highlighted-font;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $default-font-color;
+}
+
+.gradient-test {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.red-yellow-gradient-bg {
+  background: $test;
+  background: linear-gradient(30deg, $test, 70%, rgba(252, 203, 69) 100%);
+}
+
+.gradients {
+  background: $gradient-left;
+}
+
+.gradient-text {
+  background: $gradient-bottom-left;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.red-yellow-gradient-text {
+  background: linear-gradient(30deg, $test, 70%, rgb(252, 203, 69) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

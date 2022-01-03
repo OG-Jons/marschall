@@ -1,0 +1,29 @@
+$background: #100018;
+$navbar-background: #1f002d;
+$default-font-color: #FFFFFF;
+$highlighted-font: #ba6eea;
+$link: #dba1ff;
+$link-hover: #ba6eea;
+$test: #ff2400;
+
+$flickr-pink: #f72585ff;
+$byzantine: #b5179eff;
+$purple: #7209b7ff;
+$purple-2: #560badff;
+$trypan-blue: #480ca8ff;
+$trypan-blue-2: #3a0ca3ff;
+$persian-blue: #3f37c9ff;
+$ultramarine-blue: #4361eeff;
+$dodger-blue: #4895efff;
+$vivid-sky-blue: #4cc9f0ff;
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff, #4895efff, #4cc9f0ff);
+$gradient-right: linear-gradient(90deg, #f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff, #4895efff, #4cc9f0ff);
+$gradient-bottom: linear-gradient(180deg, #f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff, #4895efff, #4cc9f0ff);
+$gradient-left: linear-gradient(270deg, #f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff, #4895efff, #4cc9f0ff);
+$gradient-top-right: linear-gradient(45deg, #f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff, #4895efff, #4cc9f0ff);
+$gradient-bottom-right: linear-gradient(135deg, #f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff, #4895efff, #4cc9f0ff);
+$gradient-top-left: linear-gradient(225deg, #f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff, #4895efff, #4cc9f0ff);
+$gradient-bottom-left: linear-gradient(315deg, #f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff, #4895efff, #4cc9f0ff);
+$gradient-radial: radial-gradient(#f72585ff, #b5179eff, #7209b7ff, #560badff, #480ca8ff, #3a0ca3ff, #3f37c9ff, #4361eeff, #4895efff, #4cc9f0ff);
