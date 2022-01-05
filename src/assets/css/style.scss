@@ -38,11 +38,11 @@ body {
 .gradient-text {
   background: $gradient-bottom-left;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: rgba(255,255,255,0);
 }
 
 .red-yellow-gradient-text {
   background: linear-gradient(30deg, $test, 70%, rgb(252, 203, 69) 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: rgba(255,255,255,0);
 }
