@@ -35,3 +35,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
 }
+
+.copyright {
+  font-size: 0.8rem;
+  color: $copyright-font-color;
+}

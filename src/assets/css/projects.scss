@@ -1,6 +1,7 @@
 #github-projects {
-  width: 50vw;
+  width: 60vw;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   margin: 2rem auto 0;
@@ -11,14 +12,15 @@
     margin: 0.5rem;
     border-radius: 15px;
     padding: 1.5rem;
-    width: 500px;
+    max-width: 50%;
     background: $navbar-background;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    align-content: flex-start;
     overflow-wrap: break-word;
-    word-break: break-all;
+    word-break: break-word;
   }
 
 
