@@ -13,7 +13,7 @@ body {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -26,23 +26,12 @@ body {
   border-radius: 100px;
 }
 
-.red-yellow-gradient-bg {
-  background: $test;
-  background: linear-gradient(30deg, $test, 70%, rgba(252, 203, 69) 100%);
-}
-
 .gradients {
   background: $gradient-left;
 }
 
 .gradient-text {
   background: $gradient-bottom-left;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255,255,255,0);
-}
-
-.red-yellow-gradient-text {
-  background: linear-gradient(30deg, $test, 70%, rgb(252, 203, 69) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255,255,255,0);
 }
