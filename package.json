@@ -1,6 +1,10 @@
 {
-  "name": "portfolio",
+  "name": "marschall",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.13.1"
+  },
+  "engineStrict": true,
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
