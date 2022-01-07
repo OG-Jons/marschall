@@ -1,16 +1,16 @@
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   #github-projects {
     width: 100% !important;
   }
 
   #github-projects .card {
-    width: 100% !important;
+    width: 80% !important;
   }
 }
 
 
 #github-projects {
-  width: 60vw;
+  width: 65vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
