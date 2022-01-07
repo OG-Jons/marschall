@@ -22,14 +22,18 @@ const routes = [
     name: "Projects",
     component: Projects,
   },
-  {
-    path: "*",
-    redirect: "/",
-  },
 ];
 
 const router = new VueRouter({
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  if (!to.matched.length) {
+    next(from.path);
+  } else {
+    next();
+  }
 });
 
 export default router;
