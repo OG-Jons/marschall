@@ -8,21 +8,23 @@
   align-items: center;
   flex-direction: row;
   gap: 40px;
-}
 
-.navbar a {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  color: $default-font-color;
-}
+  a {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: $default-font-color;
+  }
 
-.navbar a.router-link-exact-active {
-  color: $highlighted-font;
+  a.router-link-exact-active {
+    color: $highlighted-font;
+  }
+
 }
 
 a {
   color: $link;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     color: $link-hover;
