@@ -1,14 +1,19 @@
 <template>
   <div v-if="ghProjects.length > 0">
+    <h1>Github</h1>
     <transition-group name="fade" tag="div" id="github-projects">
-      <div class="card" v-for="project in ghProjects" :key="project.id">
-        <a :href="project.html_url" target="_blank">
-          <h1>{{ project.name }}</h1>
-          <p>
-            {{ project.description ? project.description : "No Description" }}
-          </p>
-        </a>
-      </div>
+      <a
+        :href="project.html_url"
+        target="_blank"
+        class="card"
+        v-for="project in ghProjects"
+        :key="project.id"
+      >
+        <h2>{{ project.name }}</h2>
+        <p>
+          {{ project.description ? project.description : "No Description" }}
+        </p>
+      </a>
     </transition-group>
   </div>
 </template>

@@ -1,9 +1,11 @@
 <template>
-  <git-hub-projects />
+  <div>
+    <git-hub-projects />
+  </div>
 </template>
 
 <script>
-import GitHubProjects from "@/components/Projects/GitHubProjects";
+import GitHubProjects from "@/components/Projects/GitHubProjects.vue";
 
 export default {
   name: "Projects",

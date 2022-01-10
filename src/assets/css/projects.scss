@@ -10,11 +10,11 @@
 
 
 #github-projects {
-  width: 65vw;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 2rem auto 0;
+  margin: 2rem auto;
   gap: 1.5em;
 
   transition-group {
@@ -23,27 +23,28 @@
 
   .card {
     background: $navbar-background;
+    color: $default-font-color;
     border-radius: 15px;
     width: 45%;
     padding: 1.5rem;
     display: flex;
     text-align: left;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
     overflow-wrap: break-word;
     word-break: break-word;
-  }
-
-  .card a {
     text-decoration: none;
-    color: $default-font-color;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: 5px 8px 12px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 5px 8px 12px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 5px 8px 12px 0px rgba(0, 0, 0, 0.75);
+      transform: translateY(-5px) translateX(-1px);
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.60);
+    }
+
   }
-
-  .card p {
-    color: rgba(255, 255, 255, 0.60);
-  }
-
-
 }
