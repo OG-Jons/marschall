@@ -4,7 +4,7 @@
     <transition-group name="fade" tag="div" id="github-projects">
       <a
         :href="project.html_url"
-        target="_blank"
+        :target="hrefTarget"
         class="card"
         v-for="project in ghProjects"
         :key="project.id"
@@ -33,17 +33,25 @@ export default {
           "https://api.github.com/users/OG-Jons/repos?sort=updated&per_page=6"
         )
         .then((response) => {
-          response.data.forEach((project) => {
-            this.ghProjects.push(project);
-          });
+          this.ghProjects = response.data;
         })
         .catch((error) => {
-          console.log(error);
+          console.log(error.toJSON());
+          this.ghProjects.push({
+            id: 1,
+            name: `${error.toJSON().message}: ${error.toJSON().code}`,
+            description: error.toJSON().description,
+          });
         });
     },
   },
   created() {
     this.getGithubProjects();
+  },
+  computed: {
+    hrefTarget() {
+      return this.ghProjects.length === 1 ? "_self" : "_blank";
+    },
   },
 };
 </script>

@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import Home from "@/views/Home.vue";
 import About from "@/views/About.vue";
 import Projects from "@/views/Projects.vue";
+import CSSAnimations from "@/views/playground/M152/CSSAnimations";
+import Playground from "@/views/playground/Playground";
 
 Vue.use(VueRouter);
 
@@ -21,6 +23,21 @@ const routes = [
     path: "/projects",
     name: "Projects",
     component: Projects,
+  },
+  {
+    path: "/playground",
+    children: [
+      {
+        path: "/",
+        name: "Playground",
+        component: Playground,
+      },
+      {
+        path: "/css-animations",
+        name: "CSS Animations",
+        component: CSSAnimations,
+      },
+    ],
   },
 ];
 

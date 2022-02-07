@@ -1,0 +1,15 @@
+@import "../variables";
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: $gradient-bottom;
+  border-radius: 0.25rem;
+  margin: auto;
+  transition: height 0.6s cubic-bezier(0.18, 0.9, 0.32, 1.28), width 0.6s cubic-bezier(0.18, 0.9, 0.32, 1.28);
+
+  &:hover {
+    height: 200px;
+    width: 80%;
+  }
+}
