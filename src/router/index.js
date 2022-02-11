@@ -5,7 +5,7 @@ import About from "@/views/About.vue";
 import Projects from "@/views/Projects.vue";
 import CSSAnimations from "@/views/playground/M152/CSSAnimations";
 import Playground from "@/views/playground/Playground";
-import PokeAPI from "@/components/playground/PokeAPI";
+import PokeAPI from "@/views/playground/PokeAPI";
 
 Vue.use(VueRouter);
 

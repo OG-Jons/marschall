@@ -5,7 +5,8 @@
 <script>
 export default {
   name: "PokeAPI",
+  metaInfo: {
+    title: "PokeAPI",
+  },
 };
 </script>
-
-<style scoped></style>

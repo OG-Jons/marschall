@@ -23,6 +23,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export default {
+  name: "App",
+  metaInfo: {
+    titleTemplate: "%s | My Awesome Webapp",
+  },
   components: { Navbar, Footer },
   methods: {
     beforeLeave(element) {

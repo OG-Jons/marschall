@@ -5,6 +5,7 @@ import "./assets/css/index.scss";
 import VueTyperPlugin from "vue-typer";
 import axios from "axios";
 import VueAxios from "vue-axios";
+import VueMeta from "vue-meta";
 
 import Unicon from "vue-unicons/dist/vue-unicons-vue2.umd";
 import { uniInstagram, uniGithub, uniEnvelope } from "vue-unicons/dist/icons";
@@ -15,6 +16,8 @@ Vue.use(Unicon);
 Vue.config.productionTip = false;
 
 Vue.use(VueAxios, axios);
+
+Vue.use(VueMeta);
 
 Vue.use(VueTyperPlugin);
 

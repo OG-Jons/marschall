@@ -13,5 +13,10 @@ export default {
   components: {
     CSSHoverAnimations,
   },
+  metaInfo: {
+    title: "CSS Animations",
+    description:
+      "CSS Animations are a way to animate elements on the web. They are used to create a smooth transition between two different states.",
+  },
 };
 </script>

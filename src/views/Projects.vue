@@ -9,6 +9,9 @@ import GitHubProjects from "@/components/Projects/GitHubProjects.vue";
 
 export default {
   name: "Projects",
+  metaInfo: {
+    title: "Projects",
+  },
   components: { GitHubProjects },
 };
 </script>
