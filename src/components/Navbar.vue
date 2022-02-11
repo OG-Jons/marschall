@@ -6,10 +6,8 @@
       </div>
     </nav>
     <nav class="navbar" v-else>
-      <div v-for="route in playgroundRoutes.children" :key="route.name">
-        <router-link :to="`/playground${route.path}`">{{
-          route.name
-        }}</router-link>
+      <div v-for="route in playgroundRoutes" :key="route.name">
+        <router-link :to="route.path">{{ route.name }} </router-link>
       </div>
     </nav>
   </div>
@@ -27,7 +25,7 @@ export default {
     playgroundRoutes() {
       return this.$router.options.routes.filter((route) =>
         route.path.includes("playground")
-      )[0];
+      );
     },
     isPlayground() {
       return !this.$route.path.includes("playground");
