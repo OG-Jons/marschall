@@ -25,7 +25,7 @@ import Footer from "./components/Footer";
 export default {
   name: "App",
   metaInfo: {
-    titleTemplate: "%s | My Awesome Webapp",
+    titleTemplate: "%s | Marschall",
   },
   components: { Navbar, Footer },
   methods: {
