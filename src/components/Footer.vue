@@ -3,10 +3,10 @@
     <p class="copyright">
       Copyright © {{ new Date().getFullYear() }} Jonas Marschall
     </p>
-    <a href="https://github.com/OG-Jons">
+    <a href="https://github.com/OG-Jons" target="_blank">
       <unicon name="github" fill="#FFFFFF68" hover-fill="white" />
     </a>
-    <a href="https://www.instagram.com/jonassucksatbiking/">
+    <a href="https://www.instagram.com/jonassucksatbiking/" target="_blank">
       <unicon name="instagram" fill="#FFFFFF68" hover-fill="white" />
     </a>
     <a href="mailto:jonas@marschall.pro">
