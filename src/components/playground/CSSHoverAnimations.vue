@@ -1,6 +1,13 @@
 <template>
-  <div>
-    <div class="box"></div>
+  <div class="flex">
+    <div>
+      <h3>Growing</h3>
+      <div class="box growing-box"></div>
+    </div>
+    <div>
+      <h3>Spinning</h3>
+      <div class="box spinning-box"></div>
+    </div>
   </div>
 </template>
 
