@@ -5,6 +5,7 @@ import About from "@/views/About.vue";
 import Projects from "@/views/Projects.vue";
 import CSSAnimations from "@/views/playground/M152/CSSAnimations";
 import Playground from "@/views/playground/Playground";
+import PokeAPI from "@/components/playground/PokeAPI";
 
 Vue.use(VueRouter);
 
@@ -26,18 +27,18 @@ const routes = [
   },
   {
     path: "/playground",
-    children: [
-      {
-        path: "/",
-        name: "Playground",
-        component: Playground,
-      },
-      {
-        path: "/css-animations",
-        name: "CSS Animations",
-        component: CSSAnimations,
-      },
-    ],
+    name: "Playground",
+    component: Playground,
+  },
+  {
+    path: "/playground/css-animations",
+    name: "CSS Animations",
+    component: CSSAnimations,
+  },
+  {
+    path: "/playground/pokedex",
+    name: "Pokedex",
+    component: PokeAPI,
   },
 ];
 
