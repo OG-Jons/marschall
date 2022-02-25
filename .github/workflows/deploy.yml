@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: git-checkout
         uses: actions/checkout@v2
-        
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
@@ -24,7 +24,10 @@ jobs:
           cache: 'yarn'
 
       - name: Install all dependencies
-        run: yarn install
+        run: yarn install --immutable --immutable-cache --check-cache
+
+      - name: Lint code
+        run: yarn run lint
 
       - name: Build
         run: yarn run build # The build command of your project
