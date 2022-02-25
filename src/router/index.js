@@ -6,6 +6,7 @@ import Projects from "@/views/Projects.vue";
 import CSSAnimations from "@/views/playground/M152/CSSAnimations";
 import Playground from "@/views/playground/Playground";
 import PokeAPI from "@/views/playground/PokeAPI";
+import UrbanDictionary from "@/views/playground/UrbanDictionary";
 
 Vue.use(VueRouter);
 
@@ -39,6 +40,11 @@ const routes = [
     path: "/playground/pokedex",
     name: "Pokedex",
     component: PokeAPI,
+  },
+  {
+    path: "/playground/urban",
+    name: "Urban Dictionary",
+    component: UrbanDictionary,
   },
 ];
 
