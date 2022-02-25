@@ -9,6 +9,12 @@
   }
 }
 
+@keyframes amogus-sprite {
+  to {
+    background-position: -6100px -10px;
+  }
+}
+
 .box {
   width: 100px;
   height: 100px;
@@ -21,6 +27,13 @@
   gap: 2rem;
   align-items: center;
   flex-direction: column;
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
 }
 
 .growing-box {
@@ -33,6 +46,17 @@
   }
 }
 
-.spinning-box {
+.spinning-box:hover {
   animation: spin 2s infinite linear;
+}
+
+.amogus {
+  width: 1200px;
+  height: 840px;
+  background: url('../../assets/images/amogus.png') -10px -10px;
+  transform: scale(0.5);
+
+  &:hover {
+    animation: amogus-sprite 200ms steps(5) infinite;
+  }
 }
