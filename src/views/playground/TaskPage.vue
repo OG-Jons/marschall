@@ -8,5 +8,8 @@
 <script>
 export default {
   name: "TaskPage",
+  metaInfo: {
+    title: "TaskPage",
+  },
 };
 </script>

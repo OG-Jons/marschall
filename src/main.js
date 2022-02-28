@@ -8,9 +8,23 @@ import VueAxios from "vue-axios";
 import VueMeta from "vue-meta";
 
 import Unicon from "vue-unicons/dist/vue-unicons-vue2.umd";
-import { uniInstagram, uniGithub, uniEnvelope } from "vue-unicons/dist/icons";
+import {
+  uniInstagram,
+  uniGithub,
+  uniEnvelope,
+  uniTrash,
+  uniPen,
+  uniDraggabledots,
+} from "vue-unicons/dist/icons";
 
-Unicon.add([uniInstagram, uniGithub, uniEnvelope]);
+Unicon.add([
+  uniInstagram,
+  uniGithub,
+  uniEnvelope,
+  uniTrash,
+  uniPen,
+  uniDraggabledots,
+]);
 Vue.use(Unicon);
 
 Vue.config.productionTip = false;

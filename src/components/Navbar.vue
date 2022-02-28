@@ -1,5 +1,5 @@
 <template>
-  <div v-if="$route.path !== '/tasklist'">
+  <div v-if="!$route.path.includes('/tasklist')">
     <nav class="navbar" v-if="isPlayground">
       <div v-for="route in portfolioRoutes" :key="route.name">
         <router-link :to="route.path">{{ route.name }}</router-link>

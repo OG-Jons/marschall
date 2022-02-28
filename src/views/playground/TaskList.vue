@@ -1,14 +1,16 @@
 <template>
   <div>
-    <h1>tasklist vue</h1>
-    <TaskList />
+    <task-list :id="$route.params.id" />
   </div>
 </template>
 
 <script>
 import TaskList from "../../components/playground/TaskList";
 export default {
-  name: "TaskList",
+  name: "TaskListView",
+  metaInfo: {
+    title: "TaskList",
+  },
   components: {
     TaskList,
   },

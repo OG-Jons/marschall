@@ -7,7 +7,7 @@ import CSSAnimations from "../views/playground/M152/CSSAnimations";
 import Playground from "../views/playground/Playground";
 import PokeAPI from "../views/playground/PokeAPI";
 import UrbanDictionary from "../views/playground/UrbanDictionary";
-import TaskList from "../components/playground/TaskList";
+import TaskList from "../views/playground/TaskList";
 import TaskPage from "../views/playground/TaskPage";
 
 Vue.use(VueRouter);
@@ -30,7 +30,7 @@ const routes = [
   },
   {
     path: "/tasklist",
-    name: "Tasklist",
+    name: "Task Page",
     component: TaskPage,
   },
   {
