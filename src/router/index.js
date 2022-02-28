@@ -1,12 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "@/views/Home.vue";
-import About from "@/views/About.vue";
-import Projects from "@/views/Projects.vue";
-import CSSAnimations from "@/views/playground/M152/CSSAnimations";
-import Playground from "@/views/playground/Playground";
-import PokeAPI from "@/views/playground/PokeAPI";
-import UrbanDictionary from "@/views/playground/UrbanDictionary";
+import Home from "../views/Home.vue";
+import About from "../views/About.vue";
+import Projects from "../views/Projects.vue";
+import CSSAnimations from "../views/playground/M152/CSSAnimations";
+import Playground from "../views/playground/Playground";
+import PokeAPI from "../views/playground/PokeAPI";
+import UrbanDictionary from "../views/playground/UrbanDictionary";
+import TaskList from "../components/playground/TaskList";
+import TaskPage from "../views/playground/TaskPage";
 
 Vue.use(VueRouter);
 
@@ -25,6 +27,16 @@ const routes = [
     path: "/projects",
     name: "Projects",
     component: Projects,
+  },
+  {
+    path: "/tasklist",
+    name: "Tasklist",
+    component: TaskPage,
+  },
+  {
+    path: "/tasklist/:id",
+    name: "Tasklist",
+    component: TaskList,
   },
   {
     path: "/playground",
