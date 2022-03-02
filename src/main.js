@@ -36,7 +36,7 @@ Vue.use(VueMeta);
 Vue.use(VueTyperPlugin);
 
 axios.defaults.baseURL =
-  process.env.NODE_ENV === "production"
+  import.meta.env.NODE_ENV === "production"
     ? "https://api.marschall.pro/"
     : "http://localhost:3000/";
 
