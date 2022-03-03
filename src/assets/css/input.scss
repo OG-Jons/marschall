@@ -1,0 +1,49 @@
+// colors
+$input-background: rgb(39, 0, 56);
+$input-text-inactive: $default-font-color-deactivated;
+$input-text-active: $default-font-color;
+
+// gradient animation
+@keyframes gradient {
+  0%{background-position:0 0}
+  100%{background-position:100% 0}
+}
+
+.webflow-style-input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 1rem);
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 0.7rem 0 0.8rem 1rem;
+  background: $input-background;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    height: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6) 0 0;
+    background-size: 500% auto;
+    animation: gradient 3s linear infinite;
+  }
+
+  input {
+    flex-grow: 1;
+    color: $input-text-active;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    &::-webkit-input-placeholder {
+      color: $input-text-inactive;
+    }
+  }
+}

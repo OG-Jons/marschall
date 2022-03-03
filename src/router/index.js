@@ -1,11 +1,15 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "@/views/Home.vue";
-import About from "@/views/About.vue";
-import Projects from "@/views/Projects.vue";
-import CSSAnimations from "@/views/playground/M152/CSSAnimations";
-import Playground from "@/views/playground/Playground";
-import PokeAPI from "@/views/playground/PokeAPI";
+import Home from "../views/Home.vue";
+import About from "../views/About.vue";
+import Projects from "../views/Projects.vue";
+import CSSAnimations from "../views/playground/M152/CSSAnimations";
+import Playground from "../views/playground/Playground";
+import PokeAPI from "../views/playground/PokeAPI";
+import UrbanDictionary from "../views/playground/UrbanDictionary";
+import TaskList from "../views/playground/TaskList";
+import TaskPage from "../views/playground/TaskPage";
+import NotFoundPage from "@/views/NotFoundPage";
 
 Vue.use(VueRouter);
 
@@ -26,6 +30,16 @@ const routes = [
     component: Projects,
   },
   {
+    path: "/tasklist",
+    name: "Task Page",
+    component: TaskPage,
+  },
+  {
+    path: "/tasklist/:id",
+    name: "Tasklist",
+    component: TaskList,
+  },
+  {
     path: "/playground",
     name: "Playground",
     component: Playground,
@@ -40,9 +54,20 @@ const routes = [
     name: "Pokedex",
     component: PokeAPI,
   },
+  {
+    path: "/playground/urban",
+    name: "Urban Dictionary",
+    component: UrbanDictionary,
+  },
+  {
+    path: "*",
+    name: "404",
+    component: NotFoundPage,
+  },
 ];
 
 const router = new VueRouter({
+  mode: "history",
   routes,
 });
 

@@ -45,8 +45,8 @@ export default {
         });
     },
   },
-  created() {
-    this.getGithubProjects();
+  async beforeMount() {
+    await this.getGithubProjects();
   },
   computed: {
     hrefTarget() {
