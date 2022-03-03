@@ -9,6 +9,7 @@ import PokeAPI from "../views/playground/PokeAPI";
 import UrbanDictionary from "../views/playground/UrbanDictionary";
 import TaskList from "../views/playground/TaskList";
 import TaskPage from "../views/playground/TaskPage";
+import NotFoundPage from "@/views/NotFoundPage";
 
 Vue.use(VueRouter);
 
@@ -58,9 +59,15 @@ const routes = [
     name: "Urban Dictionary",
     component: UrbanDictionary,
   },
+  {
+    path: "*",
+    name: "404",
+    component: NotFoundPage,
+  },
 ];
 
 const router = new VueRouter({
+  mode: "history",
   routes,
 });
 
