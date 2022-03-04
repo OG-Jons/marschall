@@ -1,7 +1,9 @@
 <template>
   <div>
-    <h1>very cool tasklist page websockets yes</h1>
-    <button>make new tasklist</button>
+    <h1>TaskList working with websockets</h1>
+    <router-link to="/tasklist/urmom">
+      <button>Generate new Task list</button>
+    </router-link>
   </div>
 </template>
 
