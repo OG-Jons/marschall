@@ -1,7 +1,7 @@
 // colors
-$input-background: rgba(57, 63, 84, 0.8);
-$input-text-inactive: #7881A1;
-$input-text-active: #BFD2FF;
+$input-background: rgb(39, 0, 56);
+$input-text-inactive: $default-font-color-deactivated;
+$input-text-active: $default-font-color;
 
 // gradient animation
 @keyframes gradient {
@@ -13,11 +13,10 @@ $input-text-active: #BFD2FF;
   position: relative;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  max-width: 400px;
+  width: calc(100% - 1rem);
   margin: 0 auto;
   border-radius: 2px;
-  padding: 0.7rem 1rem 0.8rem;
+  padding: 0.7rem 0 0.8rem 1rem;
   background: $input-background;
 
   &:after {
@@ -30,7 +29,7 @@ $input-text-active: #BFD2FF;
     height: 2px;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6) 0% 0%;
+    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6) 0 0;
     background-size: 500% auto;
     animation: gradient 3s linear infinite;
   }

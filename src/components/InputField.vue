@@ -25,10 +25,6 @@ export default {
       type: String,
       default: "",
     },
-    arguments: {
-      type: Array,
-      default: () => [],
-    },
   },
   data() {
     return {
