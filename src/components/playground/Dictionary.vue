@@ -1,8 +1,13 @@
 <template>
   <div>
     <h1>Urban Dictionary Search Engine</h1>
-    <!--    <input type="text" v-model="searchQuery" />-->
-    <InputField v-model="searchQuery" />
+    <div>
+      <InputField
+        placeholder="Search..."
+        class="input-field"
+        v-model="searchQuery"
+      />
+    </div>
     <div v-if="results.length > 0">
       <h1>Results</h1>
       <div id="github-projects">
@@ -13,6 +18,7 @@
               {{ result.definition | spliceTextTo100 }}
               <br />
               <a
+                class="read-more-button"
                 @click="
                   result.readMoreDescription = !result.readMoreDescription
                 "
@@ -27,7 +33,7 @@
           </div>
           <br />
           <div id="example">
-            <span>Example: </span>
+            <span v-if="result.example">Example: </span>
             <p v-if="!result.readMoreExample">
               {{ result.example | spliceTextTo100 }}
               <br />
@@ -71,13 +77,25 @@ export default {
         })
         .then((response) => {
           this.results = [];
-          this.results = response.data.map((item) => {
-            return {
-              ...item,
-              readMoreDescription: false,
-              readMoreExample: false,
-            };
-          });
+          if (response.data.length > 0) {
+            this.results = response.data.map((item) => {
+              return {
+                ...item,
+                readMoreDescription: false,
+                readMoreExample: false,
+              };
+            });
+          } else {
+            this.results = [
+              {
+                word: "No results found",
+                definition: "",
+                example: "",
+                readMoreDescription: false,
+                readMoreExample: false,
+              },
+            ];
+          }
         })
         .catch((error) => {
           console.error(error);
@@ -107,8 +125,8 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-a {
+<style lang="scss">
+.read-more-button {
   color: #696969;
   cursor: pointer;
 
@@ -117,11 +135,11 @@ a {
   }
 }
 
-input {
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  padding: 8px;
-  width: 40%;
+.input-field {
+  width: 60vw;
+
+  input {
+    text-align: center;
+  }
 }
 </style>
