@@ -35,6 +35,7 @@ $input-text-active: $default-font-color;
 
   input {
     flex-grow: 1;
+    outline: none;
     color: $input-text-active;
     background: none;
     border: none;
