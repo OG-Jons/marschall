@@ -10,6 +10,7 @@ import UrbanDictionary from "../views/playground/UrbanDictionary";
 import TaskList from "../views/playground/TaskList";
 import TaskPage from "../views/playground/TaskPage";
 import NotFoundPage from "@/views/NotFoundPage";
+import SVGView from "@/views/playground/M152/SVG.view";
 
 Vue.use(VueRouter);
 
@@ -48,6 +49,11 @@ const routes = [
     path: "/playground/css-animations",
     name: "CSS Animations",
     component: CSSAnimations,
+  },
+  {
+    path: "/playground/svg-stuff",
+    name: "SVG Stuff",
+    component: SVGView,
   },
   {
     path: "/playground/pokedex",

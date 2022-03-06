@@ -6,6 +6,9 @@ import VueTyperPlugin from "vue-typer";
 import axios from "axios";
 import VueAxios from "vue-axios";
 import VueMeta from "vue-meta";
+import "@fortawesome/fontawesome-free/css/all.css";
+import "@fortawesome/fontawesome-free/js/all.js";
+import "vue-sidebar-menu/dist/vue-sidebar-menu.css";
 
 import Unicon from "vue-unicons/dist/vue-unicons-vue2.umd";
 import {

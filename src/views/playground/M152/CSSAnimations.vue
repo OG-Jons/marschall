@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import CSSHoverAnimations from "@/components/playground/CSSHoverAnimations";
+import CSSHoverAnimations from "@/components/playground/M152/CSSHoverAnimations";
 
 export default {
   name: "CSSAnimations",
