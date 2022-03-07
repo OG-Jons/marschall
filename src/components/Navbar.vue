@@ -6,7 +6,7 @@
       </div>
     </nav>
     <div v-else>
-      <SidebarMenu :menu="menu"></SidebarMenu>
+      <SidebarMenu :menu="menu" collapsed></SidebarMenu>
     </div>
   </div>
 </template>
