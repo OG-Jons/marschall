@@ -15,7 +15,7 @@
           <h2>{{ result.word }}</h2>
           <div id="description">
             <p v-if="!result.readMoreDescription">
-              {{ result.definition | spliceTextTo100 }}
+              {{ result.definition | spliceTextTo100 | removeBrackets }}
               <br />
               <a
                 class="read-more-button"
@@ -28,14 +28,15 @@
               >
             </p>
             <p v-else-if="result.readMoreDescription">
-              {{ result.definition }}
+              {{ result.definition | removeBrackets }}
             </p>
           </div>
           <br />
           <div id="example">
-            <span v-if="result.example">Example: </span>
+            <span v-if="result.example">Example:</span>
+            <br />
             <p v-if="!result.readMoreExample">
-              {{ result.example | spliceTextTo100 }}
+              {{ result.example | spliceTextTo100 | removeBrackets }}
               <br />
               <a
                 @click="result.readMoreExample = !result.readMoreExample"
@@ -44,7 +45,9 @@
                 Read more</a
               >
             </p>
-            <p v-else-if="result.readMoreExample">{{ result.example }}</p>
+            <p v-else-if="result.readMoreExample">
+              {{ result.example | removeBrackets }}
+            </p>
           </div>
         </div>
       </div>
@@ -54,6 +57,7 @@
 
 <script>
 import InputField from "../InputField";
+
 export default {
   name: "Dictionary",
   components: { InputField },
@@ -115,6 +119,9 @@ export default {
   filters: {
     spliceTextTo100(text) {
       return text.length > 100 ? `${text.substring(0, 100)}...` : text;
+    },
+    removeBrackets(text) {
+      return text.replace(/[[\]]+/g, "").trim();
     },
   },
   watch: {
