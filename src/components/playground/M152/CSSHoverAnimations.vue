@@ -1,5 +1,5 @@
 <template>
-  <div class="flex">
+  <div class="flex-hover">
     <div>
       <h3>Growing</h3>
       <div class="box growing-box"></div>
