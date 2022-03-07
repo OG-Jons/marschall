@@ -1,12 +1,12 @@
 <template>
-  <s-v-g />
+  <SVGComponent />
 </template>
 
 <script>
-import SVG from "@/components/playground/M152/SVG";
+import SVGComponent from "@/components/playground/M152/SVG";
 
 export default {
   name: "SVGView",
-  components: { SVG },
+  components: { SVGComponent },
 };
 </script>
