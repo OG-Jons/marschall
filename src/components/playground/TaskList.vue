@@ -32,6 +32,7 @@ export default {
   },
   data() {
     return {
+      isConnected: false,
       newTask: "",
       tasks: [
         {
@@ -59,6 +60,14 @@ export default {
     sortedTasks() {
       const newArray = [...this.tasks];
       return newArray.sort((a, b) => a.order - b.order);
+    },
+  },
+  sockets: {
+    connect() {
+      this.isConnected = true;
+    },
+    disconnect() {
+      this.isConnected = false;
     },
   },
   methods: {
