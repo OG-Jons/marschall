@@ -2,7 +2,7 @@
   "name": "marschall",
   "version": "0.1.0",
   "engines": {
-    "node": "16.13"
+    "node": "14"
   },
   "engineStrict": true,
   "private": true,
